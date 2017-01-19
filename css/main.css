@@ -2,7 +2,7 @@ body {
   background-color: #fafafa;
   color: #2A2A3A;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 26px;
   line-height: 1.4;
   font-weight: 300;
   padding: 0;
@@ -38,6 +38,7 @@ h3 {
 }
 
 a {
+  color: #2A2A3A;
   display: block;
   text-decoration: none;
 }
@@ -49,17 +50,14 @@ code {
   padding: 20px;
 }
 
+.inline-images {
+  clear: both; 
+  overflow: auto;
+}
+
 .inline-images a {
   float: left;
   margin: 6px 0 0 50px;
-}
-
-.items {
-  font-size: 20px;
-}
-
-.items li {
-  line-height: 1.2;
 }
 
 .svg img {
@@ -84,10 +82,12 @@ section h1 {
 
 ol a { display: inline-block; }
 
+.font-awesome, .icomoon { margin-top: 70px; }
+
 .font-awesome h2, .icomoon h2 {
   color: black;
   font-size: 36px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .fa-angle-right {
