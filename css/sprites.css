@@ -1,0 +1,33 @@
+.bubble-heart, .chef-hat, .drink-cocktail, .heart, .location-pin{
+	background: url(sprites.png) no-repeat;
+}
+
+.bubble-heart{
+	background-position: 0 0;
+	width: 60px;
+	height: 60px;
+}
+
+.chef-hat{
+	background-position: -290px 0;
+	width: 60px;
+	height: 60px;
+}
+
+.drink-cocktail{
+	background-position: -210px 0;
+	width: 60px;
+	height: 60px;
+}
+
+.heart{
+	background-position: -140px 0;
+	width: 60px;
+	height: 60px;
+}
+
+.location-pin{
+	background-position: -70px 0;
+	width: 60px;
+	height: 60px;
+}
