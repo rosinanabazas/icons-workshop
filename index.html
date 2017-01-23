@@ -20,44 +20,54 @@
         If you're building an icon system for a website, you have some options. You can choose between inline PNG images and CSS sprites.
         But also, if the icons will be vector images (much more common these days), you have 2 more options: using inline SVG and using icon fonts.
       </p>
-      <p>Let's compare.<p>
+      <p>Let's compare.</p>
       <i class="fa fa-angle-right fa-rotate-90 fa-3x"></i>
     </header>
 
     <section class="inline-images">
       <h1>PNG/JPG Icons</h1>
-      <p>
-        This is the less recommended way to add icons because they are raster pixel images so they won't be scalable.
-        You won't be able to change it's color by css and they'll have more weight.
-        Also they won't look good on some devices.
-      </p>
+      <p>This is the less recommended way to add icons because they are raster pixel images.</p>
+      <ul class="fa-ul">
+        <li><i class="fa-li fa fa-check-square"></i>They are not scalable.</li>
+        <li><i class="fa-li fa fa-check-square"></i>You can't change it's color by css.</li>
+        <li><i class="fa-li fa fa-check-square"></i>They'll have more weight.</li>
+        <li><i class="fa-li fa fa-check-square"></i>They won't look good on some devices.</li>
+      </ul>
       <p>For using them you just need to put the file on the img folder and call it from the html or as a background-image on the css.</p>
       <h3>Example:</h3>
       <code>
         &lt;a href="www.twitter.com"&gt;&lt;img src="img/twitter-logo.png"&gt;&lt;/a&gt;
       </code>
-      <a href="www.twitter.com"><img src="img/twitter-logo.png"></a>
+      <div class="test-scalable">
+        <img src="img/twitter-logo.png" class="size-1">
+        <img src="img/twitter-logo.png" class="size-2">
+        <img src="img/twitter-logo.png" class="size-3">
+      </div>
     </section>
 
     <section class="sprites">
       <h1>CSS Sprites</h1>
       <p>
-        Sprites are a means of combining multiple images into a single image file for use on a website, to help with performance and reducing the number of HTTP requests made for image resources.
-        It's about getting the image once, and shift it around and only display parts of it. This reduces the overhead of having to fetch multiple images.
+        Sprites are a means of combining multiple images into a single image file for use on a website.
       </p>
+      <ul class="fa-ul">
+        <li><i class="fa-li fa fa-check-square"></i>It's about getting the image once, and shift it around and only display parts of it.</li>
+        <li><i class="fa-li fa fa-check-square"></i>Helps the performance by reducing the number of HTTP requests made for image resources.</li>
+        <li><i class="fa-li fa fa-check-square"></i>They'll have less weight than adding one image per icon.</li>
+        <li><i class="fa-li fa fa-check-square"></i>They won't look good on some devices as it's still a PNG file.</li>
+      </ul>
       <h3>Sprite generators:</h3>
       <ul class="fa-ul">
-        <li><a href="https://wearekiss.com/spritepad"><i class="fa-li fa fa-check-square"></i>SpitePad</a></li>
-        <li><a href="http://spritegen.website-performance.org/"><i class="fa-li fa fa-check-square"></i>SpriteGen</a></li>
-        <li><a href="http://www.spritebox.net/#"><i class="fa-li fa fa-check-square"></i>SpiteBox</a></li>
+        <li><a href="https://wearekiss.com/spritepad"><i class="fa-li fa fa-square"></i>SpitePad</a></li>
+        <li><a href="http://spritegen.website-performance.org/"><i class="fa-li fa fa-square"></i>SpriteGen</a></li>
+        <li><a href="http://www.spritebox.net/#"><i class="fa-li fa fa-square"></i>SpiteBox</a></li>
       </ul>
       <h3>Example:</h3>
-
-      <img src="img/sprites.png">
+      <span>Entire Sprite image:</span><img src="css/sprites.png">
       <code>
-        &lt;a href="www.twitter.com"&gt;&lt;img src="img/twitter-logo.png"&gt;&lt;/a&gt;
+        &lt;div class="chef-hat"&gt;&lt;/div&gt;
       </code>
-      <a href="wwww.twitter.com" class="chef-hat">Test</a>
+      <div class="chef-hat"></div>
     </section>
 
     <section class="svg">
@@ -70,7 +80,11 @@
       </ul>
       <h3>Example:</h3>
       <code>&lt;a href="www.dribbble.com"&gt;&lt;img src="img/dribbble-logo.svg"&gt;&lt;/a&gt;</code>
-      <a href="www.dribbble.com"><img src="img/dribbble-logo.svg"></a>
+      <div class="test-scalable">
+        <img src="img/dribbble-logo.svg" class="size-1">
+        <img src="img/dribbble-logo.svg" class="size-2">
+        <img src="img/dribbble-logo.svg" class="size-3">
+      </div>
     </section>
 
     <section class="font-icons">
@@ -96,23 +110,23 @@
       <div class="font-awesome">
         <a href="http://fontawesome.io/" target="_blank"><h2>Font Awesome</h2></a>
         <p>How it works:</p>
-        <ol>
-          <li>Go to <a href="http://fontawesome.io/">Font Awesome</a> and download the zip file</li>
-          <li>Extract it and copy the entire font-awesome directory into your project.</li>
-          <li>In the < head > of your html, reference the location to your font-awesome.min.css.</li>
-          <li>You can place Font Awesome icons just about anywhere using the CSS Prefix fa and the icon's name. It's designed to be used with inline elements < i > or < span ></li>
-          <li>To increase icon sizes relative to their container, use the fa-lg, fa-2x, fa-3x, fa-4x, or fa-5x classes.</li>
-          <li>You can also simply change the icon's size and color changing it's font-size and color on the css</li>
-          <li>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-arrow-right"></i>Go to <a href="http://fontawesome.io/">Font Awesome</a> and download the zip file.</li>
+          <li><i class="fa-li fa fa-arrow-right"></i>Extract it and copy the entire font-awesome directory into your project.</li>
+          <li><i class="fa-li fa fa-arrow-right"></i>In the < head > of your html, reference the location to your font-awesome.min.css.</li>
+          <li><i class="fa-li fa fa-arrow-right"></i>You can place Font Awesome icons just about anywhere using the CSS Prefix fa and the icon's name. It's designed to be used with inline elements < i > or < span ></li>
+          <li><i class="fa-li fa fa-arrow-right"></i>To increase icon sizes relative to their container, use the fa-lg, fa-2x, fa-3x, fa-4x, or fa-5x classes.</li>
+          <li><i class="fa-li fa fa-arrow-right"></i>You can also simply change the icon's size and color changing it's font-size and color on the css</li>
+          <li><i class="fa-li fa fa-arrow-right"></i>
             There are also some animated icons:
             <i class="fa fa-cog fa-spin fa-fw"></i><span class="sr-only">Loading...</span>
           </li>
-        </ol>
+        </ul>
         <h3>Example:</h3>
         <code>&lt;i&gt;&lt;class="fa fa-diamond fa-lg"&gt;&lt;/i&gt;</code>
         <div class="icon-group">
           <i class="fa fa-diamond fa-lg"></i> fa-lg
-          <i class="fa fa-diamond fa-2x text-danger"></i> fa-2x
+          <i class="fa fa-diamond fa-2x"></i> fa-2x
           <i class="fa fa-diamond fa-3x"></i> fa-3x
           <i class="fa fa-diamond fa-4x"></i> fa-4x
           <i class="fa fa-diamond fa-5x"></i> fa-5x
@@ -123,26 +137,20 @@
         <a href="http://icomoon.io/app" target="_blank"><h2>Icomoon</h2></a>
         <p>On Icomoon you can download a predesigned icon pack or build a new one.</p>
         <p>How to create a new font icon:</p>
-        <ol>
-          <li>Go to <a href="http://icomoon.io/app">Icomoon</a> and click on Import icons button at the top left and select the icons you need.</li>
-          <li>Select them and click on "Generate font" link at the bottom.</li>
-          <li>Download the font and extract it.</li>
-          <li>Copy the Fonts folder into your project.</li>
-          <li>Copy the style.css file on the stylesheet folder.</li>
-          <li>In the < head > of your html, reference the location to your Icomoon stylesheet: style.css</li>
-          <li>Save the selection.json file somewhere so you can import it again on the app if you need to make further additions/modifications.</li>
-        </ol>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-arrow-right"></i>Go to <a href="http://icomoon.io/app">Icomoon</a> and click on Import icons button at the top left and select the icons you need.</li>
+          <li><i class="fa-li fa fa-arrow-right"></i>Select them and click on "Generate font" link at the bottom.</li>
+          <li><i class="fa-li fa fa-arrow-right"></i>Download the font and extract it.</li>
+          <li><i class="fa-li fa fa-arrow-right"></i>Copy the Fonts folder into your project.</li>
+          <li><i class="fa-li fa fa-arrow-right"></i>Copy the style.css file on the stylesheet folder.</li>
+          <li><i class="fa-li fa fa-arrow-right"></i>In the < head > of your html, reference the location to your Icomoon stylesheet: style.css</li>
+          <li><i class="fa-li fa fa-arrow-right"></i>Save the selection.json file somewhere so you can import it again on the app if you need to make further additions/modifications.</li>
+        </ul>
         <h3>Example:</h3>
         <code>&lt;span&gt;&lt;class="icn-clock"&gt;&lt;/span&gt;</code>
         <span class="icn-clock"></span>
-        <div class="icon-group">
-          <span class="icn-sofa"></span>
-          <span class="icn-settings"></span>
-          <span class="icn-wrenches"></span>
-          <span class="icn-write"></span>
-          <span class="icn-target"></span>
-          <span class="icn-user"></span>
-        <div>
+        <span class="icn-clock"></span>
+        <span class="icn-clock"></span>
       </div>
     </section>
     <footer>

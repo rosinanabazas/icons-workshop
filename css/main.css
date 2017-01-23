@@ -26,10 +26,13 @@ header p {
   color: #616c83;
   font-weight: 300;
   margin: 0 auto;
-  width: 60%;]
+  width: 75%;]
 }
 
-h2 { font-size: 25px; }
+header p:last-of-type {
+  font-size: 22px;
+  margin-top: 50px;
+}
 
 h3 {
   font-size: 26px;
@@ -46,24 +49,28 @@ a {
 code {
   background-color: black;
   color: white;
-  float: left;
+  display: block;
   padding: 20px;
 }
 
-.inline-images {
-  clear: both; 
-  overflow: auto;
+.test-scalable {
+  display: block;
+  margin-top: 50px;
 }
 
-.inline-images a {
-  float: left;
-  margin: 6px 0 0 50px;
-}
-
-.svg img {
-  height: 50px;
+.size-1 {
   width: 50px;
-  margin: 6px 0 0 50px;
+  height: 50px;
+}
+
+.size-2 {
+  width: 100px;
+  height: 100px;
+}
+
+.size-3 {
+  width: 150px;
+  height: 150px;
 }
 
 ul { list-style: none; }
@@ -80,19 +87,30 @@ section h1 {
   color: #00db9f;
 }
 
-ol a { display: inline-block; }
+.sprites img {
+  margin-bottom: 35px;
+  padding-left: 20px;
+}
+
+.sprites span {
+  vertical-align: top;
+}
+
+.chef-hat { margin-top: 30px; }
+
+.fa-angle-right {
+  color: #00db9f;
+  margin-top: 95px;
+}
+
+.fa-ul a { display: inline-block; }
 
 .font-awesome, .icomoon { margin-top: 70px; }
 
 .font-awesome h2, .icomoon h2 {
-  color: black;
+  color: #00db9f;
   font-size: 36px;
   font-weight: 400;
-}
-
-.fa-angle-right {
-  color: #00db9f;
-  margin-top: 120px;
 }
 
 .icon-group {
